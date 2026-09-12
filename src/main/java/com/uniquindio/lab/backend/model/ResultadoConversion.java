@@ -6,7 +6,7 @@ package com.uniquindio.lab.backend.model;
  * calcularConversion que se encarga de realizar las conversiones entre los
  * diferentes sistemas numericos.
  */
-public class RespuestaConversion {
+public class ResultadoConversion {
     /**
      * El metodo @method calcularConversion recibe un @param valor de tipo string y
      * una @param opcion
