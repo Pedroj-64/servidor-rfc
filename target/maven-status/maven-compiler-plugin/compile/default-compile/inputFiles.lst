@@ -1,9 +1,10 @@
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/backend/service/ClienteRFCService.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/ServidorRFC.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/backend/model/ResultadoConversion.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/conversion/ConversorImp.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/conversion/Conversor.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/backend/model/PeticionConversion.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/backend/controller/ConversionController.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/backend/BackendApplication.java
-/home/mateo/Documentos/infraestructura/laboratorio/conversor web/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/ClienteDriver.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/backend/model/RespuestaConversion.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/conversion/ConversorImp.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/ServidorRFC.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/backend/model/PeticionConversion.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/backend/controller/ConversionController.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/conversion/Conversor.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/rfc/ClienteDriver.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/backend/service/ClienteRFCService.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/backend/BackendApplication.java
+/home/ajolote/Documentos/Codigo/servidor-rfc/src/main/java/com/uniquindio/lab/backend/BackendTesting.java

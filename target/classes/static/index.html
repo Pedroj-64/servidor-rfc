@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio Aplicaciones de Red</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <img src="images/mateo.jpeg" alt="">
+        <h1 style="color: #f4f5f8;">Creado por Mateo y Pedro</h1>
+        <img src="images/pedro.jpeg" alt="">
+    </header>
+
+    <main class="card">
+        <h1>Conversor CHINGON</h1>
+        <p class="subtitulo">Cliente TCP → Servidor RFC vía Spring Boot</p>
+
+        <label for="opcion">Operación:</label>
+        <select id="opcion">
+            <option value="1">1 · Decimal → Binario</option>
+            <option value="2">2 · Binario → Decimal</option>
+            <option value="3">3 · Decimal → Hexadecimal</option>
+            <option value="4">4 · Hexadecimal → Decimal</option>
+            <option value="5">5 · Binario → Hexadecimal</option>
+            <option value="6">6 · Hexadecimal → Binario</option>
+        </select>
+
+        <div id="campos" class="campos"></div>
+
+        <button id="btnConvertir">Convertir</button>
+
+        <div id="resultado" class="resultado oculto"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

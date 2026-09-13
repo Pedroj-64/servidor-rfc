@@ -1,0 +1,10 @@
+com/uniquindio/lab/rfc/conversion/ConversorImp.class
+com/uniquindio/lab/rfc/conversion/Conversor.class
+com/uniquindio/lab/rfc/ServidorRFC.class
+com/uniquindio/lab/backend/BackendApplication.class
+com/uniquindio/lab/rfc/ClienteDriver.class
+com/uniquindio/lab/backend/service/ClienteRFCService.class
+com/uniquindio/lab/backend/controller/ConversionController.class
+com/uniquindio/lab/backend/BackendTesting.class
+com/uniquindio/lab/backend/model/PeticionConversion.class
+com/uniquindio/lab/backend/model/RespuestaConversion.class

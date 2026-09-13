@@ -1,17 +1,18 @@
 package com.uniquindio.lab.backend.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PeticionConversion {
     private int opcion;
-    private String valor;
+    private List<String> parametros = new ArrayList<>();
 
-    // solo para cuando se vaya a rellenar con ceros a la izquierda un numero
-    // binario o hexadecimal
-    private int longitudBits;
+    public PeticionConversion() {
+    }
 
-    public PeticionConversion(int opcion, String valor, int longitudBits) {
+    public PeticionConversion(int opcion, List<String> parametros) {
         this.opcion = opcion;
-        this.valor = valor;
-        this.longitudBits = longitudBits;
+        this.parametros = parametros;
     }
 
     public int getOpcion() {
@@ -22,31 +23,21 @@ public class PeticionConversion {
         this.opcion = opcion;
     }
 
-    public String getValor() {
-        return valor;
+    public List<String> getParametros() {
+        return parametros;
     }
 
-    public void setValor(String valor) {
-        this.valor = valor;
+    public void setParametros(List<String> parametros) {
+        this.parametros = parametros;
     }
 
-    public int getLongitudBits() {
-        return longitudBits;
-    }
-
-    public void setLongitudBits(int longitudBits) {
-        this.longitudBits = longitudBits;
-    }
-
-    public String generarRespuesta() {
-        String resultado = ResultadoConversion.calcularConversion(valor, opcion);
-
-        // rellenar con ceros a la izquierda si es necesario
-        if (longitudBits > 0) {
-            while (resultado.length() < longitudBits) {
-                resultado = "0" + resultado;
+    public String toLineaProtocolo() {
+        StringBuilder linea = new StringBuilder().append(opcion);
+        if (parametros != null) {
+            for (String parametro : parametros) {
+                linea.append(';').append(parametro == null ? "" : parametro.trim());
             }
         }
-        return resultado + "\n";
+        return linea.toString();
     }
 }

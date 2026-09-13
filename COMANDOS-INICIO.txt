@@ -1,0 +1,10 @@
+COMANDOS PARA INICIAR EL PROYECTO
+=================================
+
+Solo dar a run en BackendApplication
+Dar run ServidorRFC 
+
+y entrar =
+
+http://localhost:8080 
+
