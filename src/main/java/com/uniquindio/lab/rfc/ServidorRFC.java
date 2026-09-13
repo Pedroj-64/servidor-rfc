@@ -4,11 +4,17 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * Servidor TCP del protocolo RFC.
+ *
+ * Escucha el puerto 5000 y crea un hilo ClienteDriver para cada conexion.
+ */
 public class ServidorRFC {
 
-    // Se define el puerto usado para el server
+    /** Puerto TCP en el que escucha el servidor RFC. */
     public static final int PUERTO = 5000;
 
+    /** Inicia el servidor y acepta clientes hasta que el proceso termina. */
     public static void main(String[] args) {
         // Mensaje de LOG
         System.out.println("Pruebita Arrancando en el puerto " + PUERTO);

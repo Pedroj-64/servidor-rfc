@@ -1,10 +1,58 @@
 COMANDOS PARA INICIAR EL PROYECTO
 =================================
 
-Solo dar a run en BackendApplication
-Dar run ServidorRFC 
+Requisitos:
+- Java 17 o superior
+- Maven
 
-y entrar =
+Desde VS Code:
+1. Ejecutar ServidorRFC.
+2. Ejecutar BackendApplication.
+3. Abrir http://localhost:8080
 
-http://localhost:8080 
+Desde terminal:
+
+1. Compilar:
+
+cd /home/ajolote/Documentos/Codigo/servidor-rfc
+mvn clean package
+
+2. Terminal 1: iniciar el servidor RFC en el puerto 5000:
+
+cd /home/ajolote/Documentos/Codigo/servidor-rfc
+java -cp target/classes com.uniquindio.lab.rfc.ServidorRFC
+
+3. Terminal 2: iniciar Spring Boot en el puerto 8080:
+
+cd /home/ajolote/Documentos/Codigo/servidor-rfc
+mvn spring-boot:run
+
+4. Abrir en el navegador:
+
+http://localhost:8080
+
+Tambien funciona:
+
+http://localhost:8080/index.html
+
+Orden obligatorio:
+1. ServidorRFC
+2. BackendApplication / mvn spring-boot:run
+3. Navegador
+
+El backend necesita que ServidorRFC este activo para realizar conversiones.
+
+Prueba rapida del endpoint:
+
+curl -X POST http://localhost:8080/api/convertir \
+	-H "Content-Type: application/json" \
+	-d '{"opcion":1,"parametros":["25","8"]}'
+
+Respuesta esperada:
+
+{"resultado":"00011001","error":null}
+
+Para detener cada proceso, presionar Ctrl + C en su terminal.
+
+La documentacion completa esta en README.md.
 

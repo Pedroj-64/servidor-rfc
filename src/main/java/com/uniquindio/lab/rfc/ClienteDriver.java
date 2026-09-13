@@ -10,16 +10,28 @@ import java.nio.charset.StandardCharsets;
 import com.uniquindio.lab.rfc.conversion.Conversor;
 import com.uniquindio.lab.rfc.conversion.ConversorImp;
 
+/**
+ * Atiende una conexion TCP del servidor RFC.
+ *
+ * Recibe lineas con formato OPCION;PARAMETRO_1;PARAMETRO_2, ejecuta la
+ * conversion correspondiente y devuelve una linea con el resultado.
+ */
 public class ClienteDriver implements Runnable {
 
     private final Socket socket;
     private final Conversor conversor;
 
+    /**
+     * Crea un procesador para una conexion aceptada por ServidorRFC.
+     *
+     * @param socket conexion TCP del cliente
+     */
     public ClienteDriver(Socket socket) {
         this.socket = socket;
         this.conversor = new ConversorImp();
     }
 
+    /** Lee peticiones, las procesa y devuelve respuestas hasta cerrar el socket. */
     @Override
     public void run() {
         String linea;
@@ -47,6 +59,13 @@ public class ClienteDriver implements Runnable {
         }
     }
 
+    /**
+     * Interpreta una linea del protocolo y delega en el metodo de conversion.
+     *
+     * @param entrada linea recibida, por ejemplo 1;25;8
+     * @return resultado convertido
+     * @throws IllegalArgumentException si la opcion o algun valor no es valido
+     */
     private String procesador(String entrada) {
         String[] partes = entrada.trim().split(";", -1);
         int opcion = Integer.parseInt(partes[0].trim());

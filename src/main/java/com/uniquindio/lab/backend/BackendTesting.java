@@ -4,7 +4,15 @@ import com.uniquindio.lab.backend.model.PeticionConversion;
 
 import java.util.List;
 
+/**
+ * Prueba manual de la serializacion de peticiones al protocolo RFC.
+ */
 public class BackendTesting {
+    /**
+     * Muestra ejemplos de las seis operaciones soportadas.
+     *
+     * @param args argumentos opcionales de la ejecucion
+     */
     public static void main(String[] args) {
         System.out.println("=== Prueba del conversor numerico ===");
 
