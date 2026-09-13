@@ -103,6 +103,19 @@ rfc.puerto=5000
 
 Los dos procesos deben estar activos al mismo tiempo.
 
+### Opcion rapida: un solo comando
+
+En Linux o macOS, desde la raiz del proyecto:
+
+```bash
+chmod +x iniciar.sh
+./iniciar.sh
+```
+
+El script compila el JAR si todavía no existe, inicia ambos servicios y permite
+detenerlos juntos con `Ctrl + C`. La aplicación queda disponible en
+`http://localhost:8080`.
+
 ### Opcion A: desde VS Code
 
 1. Ejecutar `ServidorRFC`.

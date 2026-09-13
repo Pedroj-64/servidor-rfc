@@ -56,3 +56,11 @@ Para detener cada proceso, presionar Ctrl + C en su terminal.
 
 La documentacion completa esta en README.md.
 
+Inicio sencillo con un solo comando (Linux/macOS):
+
+	chmod +x iniciar.sh
+	./iniciar.sh
+
+El script compila el JAR si hace falta, inicia ServidorRFC y BackendApplication,
+y detiene ambos procesos al pulsar Ctrl + C.
+
